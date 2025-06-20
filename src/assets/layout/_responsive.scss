@@ -46,12 +46,11 @@
 
             &.layout-static-inactive {
                 .layout-sidebar {
-                    transform: translateX(-100%);
-                    left: 0;
+                    width: 5rem;
                 }
 
                 .layout-main-container {
-                    margin-left: 0;
+                    margin-left: 6.1rem;
                     padding-left: 2rem;
                 }
             }

@@ -136,14 +136,6 @@ export class LayoutService {
     }
 
     onMenuToggle() {
-        if (this.isOverlay()) {
-            this.layoutState.update((prev) => ({ ...prev, overlayMenuActive: !this.layoutState().overlayMenuActive }));
-
-            if (this.layoutState().overlayMenuActive) {
-                this.overlayOpen.next(null);
-            }
-        }
-
         if (this.isDesktop()) {
             this.layoutState.update((prev) => ({ ...prev, staticMenuDesktopInactive: !this.layoutState().staticMenuDesktopInactive }));
         } else {

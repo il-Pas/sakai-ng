@@ -7,11 +7,12 @@
     left: 0;
     top: 0;
     width: 100%;
-    padding: 0 2rem;
-    background-color: var(--surface-card);
+    padding: 0 1.2rem;
+    background-color: var(--p-surface-950);
     transition: left var(--layout-section-transition-duration);
     display: flex;
     align-items: center;
+    color: var(--p-surface-0);
 
     .layout-topbar-logo-container {
         width: 20rem;
@@ -24,12 +25,13 @@
         align-items: center;
         font-size: 1.5rem;
         border-radius: var(--content-border-radius);
-        color: var(--text-color);
+        color: var(--p-surface-0);
         font-weight: 500;
         gap: 0.5rem;
 
         svg {
             width: 3rem;
+            color: var(--p-surface-0);
         }
 
         &:focus-visible {
@@ -41,16 +43,15 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        color: var(--text-color-secondary);
+        color: var(--p-surface-0);
         border-radius: 50%;
         width: 2.5rem;
         height: 2.5rem;
-        color: var(--text-color);
         transition: background-color var(--element-transition-duration);
         cursor: pointer;
 
         &:hover {
-            background-color: var(--surface-hover);
+            background-color: var(--p-surface-800);
         }
 
         &:focus-visible {
@@ -59,11 +60,13 @@
 
         i {
             font-size: 1.25rem;
+            color: var(--p-surface-0);
         }
 
         span {
             font-size: 1rem;
             display: none;
+            color: var(--p-surface-0);
         }
 
         &.layout-topbar-action-highlight {
@@ -99,7 +102,7 @@
 
 @media (max-width: 991px) {
     .layout-topbar {
-        padding: 0 2rem;
+        padding: 0 1.2rem;
 
         .layout-topbar-logo-container {
             width: auto;
